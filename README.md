@@ -92,11 +92,11 @@ void loop(void)
   Serial.println(accZ);
 
   if(accX < 0)
-    serialConnection.println(valueToJSON("dog1", DATA_UNIT_NONE, 1));
+    serialConnection.println(valueToJSON("cowbell1", DATA_UNIT_NONE, 1));
   if(accY > 0)
-    serialConnection.println(valueToJSON("cow", DATA_UNIT_NONE, 1));
-  if(accZ > 0)
-    serialConnection.println(valueToJSON("cat3", DATA_UNIT_NONE, 1));
+    serialConnection.println(valueToJSON("cowbell2", DATA_UNIT_NONE, 1));
+  if(accZ > -5)
+    serialConnection.println(valueToJSON("sitar1", DATA_UNIT_NONE, 1));
 
   // Read Temp from TMP102
   //serialConnection.println(ambient.readToJSON("ambientTemp"));
