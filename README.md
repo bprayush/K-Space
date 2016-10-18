@@ -139,7 +139,7 @@ void loop(void)
 } 
 
 
-int getAcc(String x, char value[][10]){
+void getAcc(String x, char value[][10]){
   
     int index= 0, i=0, j=0;
    
